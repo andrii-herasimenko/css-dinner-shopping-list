@@ -49,9 +49,11 @@ h2.ba-second-title{
 	justify-content: center;
 }
 .ba-list{
-	display: inline-block;
+	display: block;
 	width: 620px;
 	padding: 0;
+	margin: 0;
+	margin-top: 20px;
 }
 .ba-list-item{
 	list-style-type: none;
@@ -67,6 +69,7 @@ h2.ba-second-title{
 	border-top: 3px solid #fff;
 	border-bottom: 3px solid #fff;
 	background: #625E77;
+	
 }
 .ba-list-item :hover{
 	border: none;
@@ -74,30 +77,33 @@ h2.ba-second-title{
 .ba-list :active{
 	background: #EB7E7F;
 }
-#ba-box:checked ~ span{
+[name="ba-box"]:checked ~ span{
 	text-decoration: line-through;
 	color: #C7C7D2;
 }
-.ba-list-item span:nth-child(2){
+.ba-label span:nth-child(2){
 	font-size: 20px;
 	margin: 0px 3px;
 }
-.ba-list-item span:nth-child(3){
+.ba-label span:nth-child(3){
 	font-size: 14px;
 	color: #C7C7D2;
 }
 .ba-last-wrapper{
 	display: flex;
 	justify-content: center;
-	width: 620px;
 	background: #4A4F56;
 	margin: 0 auto;
 	margin-top: 30px;
 	margin-bottom: 50px;
+	max-width: 620px;
 }
 .ba-last-wrapper p,a{
 	font-size: 20px;
 	color: #EB7E7F;
 	line-height: 12px;
 	text-decoration: none;
+}
+.ba-label{
+	width: 100%;
 }

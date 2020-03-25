@@ -63,16 +63,16 @@ h2.ba-second-title{
 	background: #88839E;
 	padding: 10px 5px;
 	color: #fff;
-
+	border:3px solid transparent;
 }
 .ba-list :hover{
+	border: none;
+	
+}
+.ba-list-item:hover{
 	border-top: 3px solid #fff;
 	border-bottom: 3px solid #fff;
 	background: #625E77;
-	
-}
-.ba-list-item :hover{
-	border: none;
 }
 .ba-list :active{
 	background: #EB7E7F;
